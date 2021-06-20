@@ -63,10 +63,6 @@ video {
 .typewrite { color:#ccc; text-decoration: none;}
 
 @media screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
-  }
-  
   .heading-content{
     position: absolute;
     top: 10%;
@@ -82,10 +78,6 @@ video {
 }
 
 @media screen and (max-width: 992px) {
-  body {
-    background-color: lightgreen;
-  }
-  
   .heading-content{
     position: absolute;
     top: 15%;
