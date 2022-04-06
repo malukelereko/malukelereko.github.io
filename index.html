@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Maluke Design Portfolio</title>
+    <title>Maluke 's Portfolio</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <!-- Bootstrap core CSS -->
@@ -14,14 +14,17 @@
     <!-- <link href="css/mdb.min.css" rel="stylesheet"> -->
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive"> 
   
     <div id="home">
         <!------------Navigation Start------------------------->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -46,28 +49,74 @@
             </ul>
             
             </div>
-        </nav>
+        </nav> -->
 
+        <nav class="flex items-center bg-blue-800 py-3 px-5 flex-wrap fixed w-full z-10 top-0">
+            <a href="" class="p-2 mr-4 inline-flex items-center">
+                <span class="text-xl text-white font-bold uppercase trackling-wide">Maluke</span>
+            </a>
+            <button id="toggle" class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto">
+                <i class="material-icons">menu</i>
+            </button>
+            <div class="hidden w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+                <div class="top-nav lg:inline-flex lg:flex-grow flex lg:flex-row flex-col">
+                    <a href="" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-blue-400 hover:text-white hover:bg-blue-900">
+                        <span>Home</span>
+                    </a>
+
+                    <a href="" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-blue-400 hover:text-white hover:bg-blue-900">
+                        <span>About</span>
+                    </a>
+
+                    <a href="" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-blue-400 hover:text-white hover:bg-blue-900">
+                        <span>Products</span>
+                    </a>
+
+                    <a href="" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-blue-400 hover:text-white hover:bg-blue-900">
+                        <span>Contact us</span>
+                    </a>
+                </div>
+                <div class="lg:inline-flex lg:flex-grow flex justify-end">
+                    <a href="" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-blue-400 hover:text-white hover:bg-blue-900">
+                        <i class="fab fa-google" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-blue-400 hover:text-white hover:bg-blue-900">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-blue-400 hover:text-white hover:bg-blue-900">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
         <!------------Navigation End--------------------------->
 
         <!------------Background Start------------------------->
-        <div class="background">
+        <!-- <div class="background">
             <img src="img/denis-pavlovic-ehrjkW-aGF4-unsplash.jpg" alt="Background" class="img-fluid">
-        </div>
+        </div> -->
 
-        <div class="heading-content text-center d-sm-none d-md-block">
-            <h5>Hello, I'm</h5>
-            <h1>Lereko Maluke</h1>
-            <p>
-                <a href="" class="typewrite" data-period="2000" data-type='[ "I am a designer.", "I am Software Developer.", "I am an Analyst.", "I am a professional googla:)." ]'>
-                    <span class="wrap"></span>
-                </a>
-            </p>
+        <div class="flex flex-row flex-wrap p-5 mt-6 items-center h-screen">
+            <!-- <div class="bg-blue-800 heading-content text-dark text-center "> -->
+            <div class="flex-1">
+                <h5 class="text-6xl font-bold">Hello, I'm Maluke</h5>
+                <h1 class="text-6xl font-bold">Your friendly neighbourhood</h1>
+                <p class="mt-1">
+                    <a href="" class="typewrite text-5xl " data-period="2000" data-type='[ "Software Developer...",   "Business Analyst....", "Web designer.....", "I am a professional googla:)." ]'>
+                        <span class="wrap text-xl"></span>
+                    </a>
+                </p>
+            </div>
+            <div class="flex-1">
+                <img src="/img/developer.svg" alt="">
+            </div>    
         </div>
-
         <!------------Background End--------------------------->
     </div>
-
+    
     <!------------------About Start---------------------------->
     <div id="about" class="container mt-5 pb-3 offset">
         <div class="post-heading text-center">
@@ -379,6 +428,14 @@
     <!------------------Footer---------------------------------->
 
     <!-- SCRIPTS -->
+    <script>
+        function toggleNavigation() {
+            let nav = document.getElementById("navigation")
+            nav.classList.toggle("hidden")
+        }
+
+        document.getElementById("toggle").addEventListener("click", toggleNavigation);
+    </script>
     <!-- Interactivity -->
     <script type="text/javascript" src="js/app.js"></script>
     <!-- JQuery -->
