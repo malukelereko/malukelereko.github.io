@@ -24,34 +24,7 @@
   
     <div id="home">
         <!------------Navigation Start------------------------->
-        <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
         
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-                </li>
-                
-                <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-            
-            </div>
-        </nav> -->
-
         <nav class="flex items-center bg-blue-800 py-3 px-5 flex-wrap fixed w-full z-10 top-0">
             <a href="" class="p-2 mr-4 inline-flex items-center">
                 <span class="text-xl text-white font-bold uppercase trackling-wide">Maluke</span>
@@ -61,19 +34,19 @@
             </button>
             <div class="hidden w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
                 <div class="top-nav lg:inline-flex lg:flex-grow flex lg:flex-row flex-col">
-                    <a href="" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-blue-400 hover:text-white hover:bg-blue-900">
+                    <a href="#home" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-blue-400 hover:text-white hover:bg-blue-900">
                         <span>Home</span>
                     </a>
 
-                    <a href="" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-blue-400 hover:text-white hover:bg-blue-900">
+                    <a href="#about" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-blue-400 hover:text-white hover:bg-blue-900">
                         <span>About</span>
                     </a>
 
-                    <a href="" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-blue-400 hover:text-white hover:bg-blue-900">
-                        <span>Products</span>
+                    <a href="#projects" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-blue-400 hover:text-white hover:bg-blue-900">
+                        <span>Projects</span>
                     </a>
 
-                    <a href="" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-blue-400 hover:text-white hover:bg-blue-900">
+                    <a href="#contact" class="lg:inline-flex lg:w-auto px-3 py-2 rounded text-blue-400 hover:text-white hover:bg-blue-900">
                         <span>Contact us</span>
                     </a>
                 </div>
@@ -96,9 +69,6 @@
         <!------------Navigation End--------------------------->
 
         <!------------Background Start------------------------->
-        <!-- <div class="background">
-            <img src="img/denis-pavlovic-ehrjkW-aGF4-unsplash.jpg" alt="Background" class="img-fluid">
-        </div> -->
 
         <div class="flex flex-row flex-wrap p-5 mt-6 items-center h-screen justify-between">
             <!-- <div class="bg-blue-800 heading-content text-dark text-center "> -->
@@ -107,7 +77,7 @@
                     Software Developer / Business Analyst
                 </p>
                 <h5 class="text-5xl font-bold">Hello, I'm Maluke</h5>
-                <h1 class="text-5xl font-bold">Welcome to to my domain</h1>
+                <h1 class="text-5xl font-bold">Welcome to my domain</h1>
             </div>
             <div class="hidden lg:inline-flex">
                 <object width="500" height="500" viewBox="0 0 604 586" fill="none" data="/img/developer.svg"></object>
@@ -132,10 +102,59 @@
                 <h2>A Little About Me</h2>
                 <hr>
                 <p>
-                    Having graduated with a degree in Computer Science at the National University of Lesotho a few months I have been working as a Business Analyst and have enjoyed it as it afforded me the opportunity to take a glimpse into the business of Software Engineering but has not in any diminished my love for creating developing the apps myself instead of guiding others through the process. I also believe it has in a lot ways made me a better application developer.
+                    Having graduated with a degree in Computer Science at the National University of Lesotho a few months I have been working as a Business Analyst and have enjoyed it as it afforded me the opportunity to take a glimpse into the business side of Software Engineering but has not in any diminished my love for creating developing the apps myself instead of guiding others through the process. I also believe it has in a lot ways made me a better application developer.
                 </p>
 
-                <a href="#about" class="btn btn-dark">Download My CV</a>
+                <div class="text-sm font-medium text-center text-gray-500 dark:text-gray-400 dark:border-gray-700">
+                    <ul class="flex flex-wrap -mb-px">
+                        <li onclick="openTab(event, 'main-skills')" class="mr-2 tab-link">
+                            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 active">Main skills</button>
+                        </li>
+                        <li onclick="openTab(event, 'experience')" class="mr-2 tab-link">
+                            <!-- <button class="inline-block p-4 rounded-t-lg border-b-2 text-blue-600 border-blue-600 dark:text-blue-500 dark:border-blue-500" >Experience</button> -->
+                            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300 active">Experience</button>
+                        </li>
+                        <li onclick="openTab(event, 'education')" class="mr-2 tab-link">
+                            <button class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Education & Certification</button>
+                        </li>
+                        <!-- <li class="mr-2">
+                            <a href="#" class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Contacts</a>
+                        </li>
+                        <li>
+                            <a class="inline-block p-4 text-gray-400 rounded-t-lg cursor-not-allowed dark:text-gray-500">Disabled</a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div id="main-skills" class="tab-content">
+                    <div class="mt-3">
+                        <p><span class="font-bold">Software Development</span></p>
+                        <p>Python, JavaScript, Java</p>
+                    </div>
+                    <div class="mt-3">
+                        <p><span class="font-bold">Business Analysis</span></p>
+                    <p>Business process Engineering, Data Analysis, Requirement Analysis,...</p>
+                    </div>
+                </div>
+
+                <div id="experience" class="hidden tab-content">
+                    <div class="mt-3">
+                        <p><span class="font-bold">Business Analyst</span> Chaperone Limited</p>
+                        <p>2020 - Current</p>
+                    </div>
+                </div>
+
+                <div id="education" class="hidden tab-content">
+                    <div class="mt-3">
+                        <p><span class="font-bold">BSc in Computer Science</span> National University of Lesotho</p>
+                        <p>2020</p>
+                    </div>
+                    <div class="mt-3">
+                        <p><span class="font-bold">Business Analysis Certificate</span> Udemy</p>
+                        <p>2022</p>
+                    </div>
+                </div>
+
+                <a href="#about" class="btn btn-dark mt-4">Download My CV</a>
             </div>
         </div>
 
@@ -153,55 +172,55 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 col-12 pb-5">
                 <div class="card  h-100">
-                    <img class="card-img-top" src="img/Beng_Logo.png" alt="Card image cap">
+                    <img class="card-img-top" src="img/Dashboard.png" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">Barry Engineering Logo</h5>
-                      <p class="card-text">Logo requeted by Mr. Mona for his business. The logo was designed using Adobe Illustrator.</p>
-                      <a href="#projects" class="btn btn-dark">View Logo</a>
+                      <h5 class="card-title font-bold">React Dashboard Template</h5>
+                      <p class="card-text">React and Material UI starter template aimed to helping individuals or organization build out an administration and reporting portal for their applications.</p>
+                      <a href="https://react-dashboard-maluke.herokuapp.com/" class="btn btn-dark mt-3" target="_blank">Demo</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6 col-12 pb-5">
                 <div class="card  h-100">
-                    <video src="video/Wedding.mp4" controls></video>
+                    <img src="img/Lescom.png"/>
                     <div class="card-body">
-                      <h5 class="card-title">Wedding Video</h5>
-                      <p class="card-text">This wedding invitation video was freelance gig and implemented using Adobe Illustrator and Adobe After Effects.</p>
-                      <a href="#projects" class="btn btn-dark">Watch Video</a>
+                      <h5 class="card-title font-bold">Lescom Backend</h5>
+                      <p class="card-text">FastAPI(Python) Messaging application backend for a collaboration project with a couple of tech enthusiasts with a dream to build their own local tech community platform</p>
+                      <a href="https://lescom.herokuapp.com/" class="btn btn-dark mt-3" target="_blank">Demo</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6 col-12 pb-5">
                 <div class="card h-100">
-                    <img class="card-img-top" src="img/Wireframe.png" alt="Card image cap">
+                    <img class="card-img-top" src="img/Pgcacademy.PNG" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">App Wireframe</h5>
-                      <p class="card-text">Wireframe design for the mobile application designed on Adobe XD, Which also serves as a prototype</p>
-                      <a href="#projects" class="btn btn-dark">View Wireframes</a>
+                      <h5 class="card-title font-bold">Kid's cafe</h5>
+                      <p class="card-text">PGC Academy Wordpress business website; for an initiative intended to teach children how best to manage money.</p>
+                      <a href="https://pgcacademy.org/" class="btn btn-dark mt-5" target="_blank">View Website</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6 col-12 pb-5">
                 <div class="card  h-100">
-                    <img class="card-img-top" src="img/sample.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="img/text.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">Smartpadd Project</h5>
+                      <h5 class="card-title font-bold">Smartpadd Project</h5>
                       <p class="card-text">A software that enables the user to extract text from media files(images and pdfs) and export them to a text document for editing</p>
-                      <a href="https://www.facebook.com/847853251970285/posts/2841296385959285/?app=fbl" class="btn btn-dark">View Story</a>
+                      <a href="https://www.facebook.com/847853251970285/posts/2841296385959285/?app=fbl" class="btn btn-dark mt-3" target="_blank">View Story</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6 col-12 pb-5">
                 <div class="card  h-100">
-                    <img class="card-img-top" src="img/sample.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="img/Contact_tracing.PNG" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">Contact Tracing App</h5>
+                      <h5 class="card-title font-bold">Contact Tracing App</h5>
                       <p class="card-text">This app tells you if someone who has COVID-19 came close to you in the past 14 days so you can immediately test....</p>
-                      <a href="https://www.facebook.com/847853251970285/posts/2914890855266504/?app=fbl" class="btn btn-dark">View Story</a>
+                      <a href="https://www.facebook.com/847853251970285/posts/2914890855266504/?app=fbl" class="btn btn-dark mt-3" target="_blank">View Story</a>
                     </div>
                 </div>
             </div>
@@ -212,7 +231,7 @@
     <!------------------Project End---------------------------->
 
     <!------------------Skills Start---------------------------->
-    <div id="projects" class="container mt-5 pb-3  offset">
+    <!-- <div id="projects" class="container mt-5 pb-3  offset">
         <div class="post-heading text-center">
             <h3 class="display-4 font-weight-bold">What I can Do for you</h3>
             <hr class="w-50 mx-auto pb-5" width="50%">
@@ -221,7 +240,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 col-12 pb-3">
                 <div class="card">
-                    <!--<img class="card-img-top" src="..." alt="Card image cap">-->
+                    
                     <div class="card-body">
                       <h5 class="card-title">Designer</h5>
                       <p class="card-text">Design Logos, application Wireframes and creating videos</p>
@@ -237,7 +256,7 @@
 
             <div class="col-lg-4 col-md-6 col-12 pb-3">
                 <div class="card">
-                    <!--<img class="card-img-top" src="..." alt="Card image cap">-->
+                    
                     <div class="card-body">
                       <h5 class="card-title">Software Developer</h5>
                       <p class="card-text">Develop android application, websites and scripting</p>
@@ -253,7 +272,7 @@
 
             <div class="col-lg-4 col-md-6 col-12 pb-3">
                 <div class="card">
-                    <!--<img class="card-img-top" src="..." alt="Card image cap">-->
+                    
                     <div class="card-body">
                       <h5 class="card-title">Analyst</h5>
                       <p class="card-text">Process Modelling, Project management, Reporting and Business Analysis</p>
@@ -267,7 +286,7 @@
                   </div>
             </div>
 
-    </div>
+    </div> -->
     <!------------------Skills End---------------------------->
 
 
@@ -428,12 +447,40 @@
 
     <!-- SCRIPTS -->
     <script>
+        
+        // Toggle navigation bar
         function toggleNavigation() {
+            
             let nav = document.getElementById("navigation")
             nav.classList.toggle("hidden")
         }
 
         document.getElementById("toggle").addEventListener("click", toggleNavigation);
+
+        function openTab(event, tabName){
+            // Declare all variables
+            var tabContent = document.getElementsByClassName("tab-content")
+            var tabLinks = document.getElementsByClassName("tab-links")
+            
+            for(let i = 0; i < tabContent.length; i++){
+                tabContent[i].classList.add("hidden")
+            }
+
+            for(let i = 0; i < tabLinks.length; i++){
+                tabContent[i].className = tabLinks[i].className.replace("active", " ")
+            }
+
+            //console.log(tabContent)
+            //console.log(tabLinks)
+
+            // Show current tab
+            currentTab = document.getElementById(tabName).classList.remove("hidden")
+            //event.target.className.replace(" border-transparent", " text-blue-600 border-blue-600")
+            //console.log(event.target)
+
+            //text-blue-600 border-blue-600 
+        }
+
     </script>
     <!-- Interactivity -->
     <script type="text/javascript" src="js/app.js"></script>
